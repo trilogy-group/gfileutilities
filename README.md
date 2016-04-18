@@ -14,6 +14,8 @@ during the encryption the file name of the file is being saved as well and it is
 ##Message Format
 The format of the resulting encrypted message is the following:
 
+|Format of encrypted message   |
+|------------------------------|
 |SALT|IV|ENCRYPTED MESSAGE|HMAC|
 
 The format of the ENCRYPTED MESSAGE is the following:
