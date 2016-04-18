@@ -24,38 +24,43 @@ The format of the ENCRYPTED MESSAGE is the following:
 
 ###Usage:
 
+Build:
+```
+gradle build
+```
+
 Encryption of a file:
 ```
-	./gfileutilities -e -f foo.txt -o foo -p password
+./gfileutilities -e -f foo.txt -o foo -p password
 ```
 
 Encryption of a folder/subfolders:
 ```
-	./gfileutilities -e -m folder -o foo -p password
+./gfileutilities -e -m folder -o foo -p password
 ```
 
 Encryption of multiple files:
 ```
-	./gfileutilities -e -m foo1.txt foo2.txt -o foo -p password
+./gfileutilities -e -m foo1.txt foo2.txt -o foo -p password
 ```
 
 
 Decryption of a file without checking the HMAC: 
 ```
-	./gfileutilities -d -f foo.gfile -p password -o folder
+./gfileutilities -d -f foo.gfile -p password -o folder
 ```
 
 Decryption of multiple files without checking the HMAC: 
 ```
-	./gfileutilities -d -m foo1.gfile foo2.gfile -p password -o folder
+./gfileutilities -d -m foo1.gfile foo2.gfile -p password -o folder
 ```
 
 Decryption of a file with checking the HMAC: 
 ```
-	./gfileutilities -x -f foo.gfile -p password -o folder
+./gfileutilities -x -f foo.gfile -p password -o folder
 ```
 
 Verify only the HMAC:
 ```
-	./gfileutilities -v -f foo.gfile -p password
+./gfileutilities -v -f foo.gfile -p password
 ```
